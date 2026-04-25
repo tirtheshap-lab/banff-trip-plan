@@ -195,7 +195,7 @@ footer { text-align: center; padding: 0 20px 56px; font-family: var(--font-serif
 
 <div class="logistics">
   <div class="lg-card"><div class="lg-icon lgi-g">✈️</div><div class="lg-info"><div class="lg-label">Outbound flight</div><div class="lg-value">WS651 · May 12</div><div class="lg-sub">YYZ → YYC · departs 6:30 PM</div></div></div>
-  <div class="lg-card"><div class="lg-icon lgi-s">✈️</div><div class="lg-info"><div class="lg-label">Return flight</div><div class="lg-value">AC152 · May 19</div><div class="lg-sub">YYC → YYZ · departs 11:00 AM</div></div></div>
+  <div class="lg-card"><div class="lg-icon lgi-s">✈️</div><div class="lg-info"><div class="lg-label">Return flight</div><div class="lg-value">AC152 · May 19</div><div class="lg-sub">YYC → YYZ · departs 6:23 PM · arrives ~12:15 AM</div></div></div>
   <div class="lg-card"><div class="lg-icon lgi-a">🚐</div><div class="lg-info"><div class="lg-label">Budget · #42086250CA3</div><div class="lg-value">Dodge Grand Caravan</div><div class="lg-sub">Pickup May 12, 10:30 PM · YYC</div></div></div>
   <div class="lg-card"><div class="lg-icon lgi-r">🏡</div><div class="lg-info"><div class="lg-label">Airbnb · hosted by Jan</div><div class="lg-value">5 Hidden Valley Gate NW</div><div class="lg-sub">Calgary, AB · check-in from 3 PM</div></div></div>
 </div>
@@ -419,7 +419,7 @@ footer { text-align: center; padding: 0 20px 56px; font-family: var(--font-serif
         { t:'1:30 PM',  d:'Vermilion Lakes drive &amp; walk', n:'Three shallow lakes west of Banff · iconic Mount Rundle reflections · one of the most photographed spots in the park' },
         { t:'Optional', d:'Cave and Basin Historic Site ' + bk('~45 min','o'), n:'Birthplace of Canada\'s national parks · thermal springs · history exhibit' },
         { t:'3:30 PM',  d:'Banff Ave stroll — last coffee, souvenirs, browse' },
-        drive('Banff town', 'Calgary (Airbnb)', '~1 hr 30 min'),
+        drive("Banff town", "Calgary (Airbnb)", '~1 hr 30 min'),
         { t:'~6:30 PM', d:'Back in Calgary · final group dinner 🎉' },
         { t:'Night',    d:'Pack bags for the early airport run tomorrow' }
       ]
@@ -428,17 +428,19 @@ footer { text-align: center; padding: 0 20px 56px; font-family: var(--font-serif
     /* ── DAY 8 ── */
     { num:'8', dn:'dn-f', dt:'dt-f', tag:'Fly home', date:'Tue, May 19', name:'Fly Home to Toronto',
       items:[
-        { t:'6:00 AM',  d:'Wake up — last morning in Calgary ☀️' },
-        { t:'6:15 AM',  d:'Quick breakfast before checkout', n:'Tim Hortons at Panorama Hills · 170 Panatella Blvd NW · ~5 min from Airbnb · or pack snacks the night before for the road' },
-        { t:'By 7:00 AM', d:'Airbnb checkout ' + bk('Deadline 11 AM','w'), n:'Must be out by 11 AM but leaving by 7 AM to make the flight comfortably — bags packed the night before', hw:true },
-        drive('Airbnb (5 Hidden Valley Gate NW)', 'YYC Airport — Budget Car Return', '~20–25 min'),
-        { t:'~7:30 AM',  d:'Return Budget Grand Caravan at YYC', n:'Budget Rent A Car · 2000 Airport Road NE, Calgary International Airport · opens 7 AM · unpair all Bluetooth devices before handing over keys · confirmation #42086250CA3' },
-        { t:'~7:45 AM',  d:'Head to check-in — Air Canada Terminal', n:'Calgary International Airport · Air Canada departs from the main terminal · follow signs for departures · allow extra time for bags' },
-        { t:'~8:00 AM',  d:'Check in + bag drop for AC152' },
-        { t:'~8:30 AM',  d:'Clear security + head to gate', n:'YYC security can be busy on Tuesday mornings — give yourself the full 30 min buffer' },
-        { t:'~9:00 AM',  d:'Gate time — grab airport breakfast or coffee', n:'Joey Restaurant airside · various Tim Hortons and grab-and-go options past security' },
-        { t:'11:00 AM',  d:'AC152 departs Calgary (YYC) ✈️', n:'~4 hr flight · arrives Toronto Pearson Terminal 1 · Air Canada' },
-        { t:'~5:00 PM',  d:'Arrive Toronto Pearson — Terminal 1', n:'Baggage claim on arrivals level · welcome home 🏠' }
+        { t:'Morning',  d:'Sleep in — evening flight means no rush today 😌' },
+        { t:'~9:30 AM', d:'Last breakfast at the Airbnb', n:'5 Hidden Valley Gate NW, Calgary · enjoy the morning, pack any remaining items' },
+        { t:'10:45 AM', d:'Airbnb checkout ' + bk('Deadline 11 AM','w'), n:'Must be out by 11 AM · return keys and leave the upper floor as found', hw:true },
+        drive('Airbnb (5 Hidden Valley Gate NW, Calgary)', '744 South Point Heath SW, Airdrie T4B 5M7', '~20–25 min'),
+        { t:'~11:15 AM', d:'Arrive — 744 South Point Heath SW, Airdrie', n:'Airdrie, AB T4B 5M7' },
+        { t:'~1:30 PM',  d:'Depart Airdrie — head to YYC' },
+        drive('744 South Point Heath SW, Airdrie', 'YYC Airport — Budget Car Return (2000 Airport Rd NE)', '~35–40 min'),
+        { t:'~2:15 PM',  d:'Return Budget Grand Caravan at YYC', n:'Budget Rent A Car · 2000 Airport Road NE, Calgary International Airport · unpair all Bluetooth devices before handing over keys · confirmation #42086250CA3' },
+        { t:'~2:30 PM',  d:'Check in + bag drop for AC152', n:'Air Canada main terminal · follow signs for departures · plenty of time — no rush' },
+        { t:'~3:00 PM',  d:'Clear security + head airside', n:'~3 hrs before departure — very comfortable buffer' },
+        { t:'3:30 PM',   d:'Explore the terminal — grab dinner or drinks airside', n:'Plenty of restaurants and bars past security · last meal in Alberta 🏔' },
+        { t:'6:23 PM',   d:'AC152 departs Calgary (YYC) ✈️', n:'Air Canada · Gate C52 · ~4 hr flight' },
+        { t:'~12:15 AM', d:'Arrive Toronto Pearson — Terminal 1', n:'May 20 · midnight arrival · EDT · baggage claim on arrivals level · welcome home 🏠' }
       ]
     }
   ];
